@@ -14,9 +14,3 @@ Additionally I have completed multiple industry certifications from VMware, EMC,
 I've mainly started this blog to share random bits and pieces that I've learnt along the way either during my day job or from trying this out in my lab.
 
 If there is anything that I post that you'd like me to divulge in deeper or is totally wrong let me know!
-
-<a href="https://twitter.com/ymmit85" target="_blank">Twitter</a>
-
-<a href="http://au.linkedin.com/pub/tim-williams/29/319/632" target="_blank">Linkedin</a>
-
-<a href="mailto:tim@ymmit.net" target="_blank">Email</a>
