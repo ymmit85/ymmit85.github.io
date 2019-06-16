@@ -3,7 +3,7 @@ layout: page
 title: About
 date: 2015-03-08 21:57
 author: ymmit85
-comments: true
+comments: false
 categories: []
 ---
 I have been working in the IT industry for the past 11 years. During this time I have been engaged in various roles starting as a Service Desk Technician and progressing into a Tech Specialist
