@@ -6,6 +6,6 @@ title: Blog
 <ul>
  {% for post in site.posts %}	
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p><small>{{ post.date | date: "%B %e, %Y" }} . {{ post.category }} . </small></p>			
+    <p><small>{{ post.date | date: "%B %e, %Y" }} . {{ post.categories }} . </small></p>			
 {% endfor %}
 </ul>
