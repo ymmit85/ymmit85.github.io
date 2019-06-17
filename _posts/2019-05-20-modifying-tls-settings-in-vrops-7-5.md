@@ -60,7 +60,7 @@ sed -i '/ EC keySize &lt; 224, TLSv1, TLSv1.1, DES40_CBC, RC4_40, 3DES_EDE_CBC/c
 
 #### View new config
 ``
-grep 'EC keySize &lt; 224,' $VMWARE_JAVA_HOME/lib/security/java.security
+grep 'EC keySize < 224,' $VMWARE_JAVA_HOME/lib/security/java.security
 
 cp $VCOPS_BASE/../vmware-vcopssuite/utilities/conf/vcops-apache.conf $VCOPS_BASE/../vmware-vcopssuite/utilities/conf/vcops-apache.conf.bak
 
@@ -72,11 +72,11 @@ grep SSLProtocol $VCOPS_BASE/../vmware-vcopssuite/utilities/conf/vcops-apache.co
 
 cp $VMWARE_JAVA_HOME/lib/security/java.security $VMWARE_JAVA_HOME/lib/security/java.security.bak
 
-grep 'EC keySize &lt; 224,' $VMWARE_JAVA_HOME/lib/security/java.security
+grep 'EC keySize < 224,' $VMWARE_JAVA_HOME/lib/security/java.security
 
-sed -i '/ EC keySize &lt; 224, TLSv1, TLSv1.1, DES40_CBC, RC4_40, 3DES_EDE_CBC/c\ EC keySize &lt; 224, DES40_CBC, RC4_40, 3DES_EDE_CBC' $VMWARE_JAVA_HOME/lib/security/java.security
+sed -i '/ EC keySize < 224, TLSv1, TLSv1.1, DES40_CBC, RC4_40, 3DES_EDE_CBC/c\ EC keySize < 224, DES40_CBC, RC4_40, 3DES_EDE_CBC' $VMWARE_JAVA_HOME/lib/security/java.security
 
-grep 'EC keySize &lt; 224,' $VMWARE_JAVA_HOME/lib/security/java.security
+grep 'EC keySize < 224,' $VMWARE_JAVA_HOME/lib/security/java.security
 ``
 
 Once done and the cluster nodes have restarted then as per the <a href="https://kb.vmware.com/s/article/67108" target="_blank" rel="noopener">KB </a>run the following to test that everything is working (or just test the Adapter from the UI).
