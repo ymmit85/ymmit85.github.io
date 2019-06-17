@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: about
 date: 2015-03-08 21:57
 author: ymmit85
 comments: false
