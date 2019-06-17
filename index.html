@@ -2,7 +2,7 @@
 layout: default
 ---
 <ul >
-    <t> Latest Posts </t>
+    <t> latest posts </t>
 
     {% for post in site.posts limit:4 %}
     <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> &raquo; <span>{{ post.date | date_to_string }}</span></li>

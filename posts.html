@@ -5,7 +5,7 @@ title: Blog
 
 <div class="tags-expo">
     <div class="tags-expo-list">
-    <h3> Categories </h3>
+    <t> categories </t>
       {% for tag in site.categories %}
       <a href="#{{ tag[0] | slugify }} - " class="post-tag">{{ tag[0] }}</a>
       {% endfor %}
@@ -13,7 +13,7 @@ title: Blog
     <hr/>
     <div class="tags-expo-section">
       {% for tag in site.categories %}
-      <p id="{{ tag[0] | slugify }}">{{ tag | first }}</p>
+      <t id="{{ tag[0] | slugify }}">{{ tag | first }}</t>
       <ul class="tags-expo-posts">
         {% for post in tag[1] %}
           <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
