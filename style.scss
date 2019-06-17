@@ -50,7 +50,7 @@ h1 {
     color: inherit;
   }
 }
-
+ 
 h2 {
   font-size: 24px;
 }
@@ -66,6 +66,11 @@ h4 {
 
 p {
   margin: 15px 0;
+}
+
+t {
+  font-size: 24px;
+  color: $gray;
 }
 
 a {
