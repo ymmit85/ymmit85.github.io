@@ -5,10 +5,9 @@ title: Blog
 
 <div class="tags-expo">
     <div class="tags-expo-list">
-    <t> categories </t>
-
+      <t> categories </t>
       {% for tag in site.categories %}
-      <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] " - "}}</a>
+        <a href="#{{ tag[0] | slugify | - }}" class="post-tag">{{ tag[0] " - "}}</a>
       {% endfor %}
     </div>
     <hr/>
