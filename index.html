@@ -4,7 +4,7 @@ layout: default
 <ul >
     <h2> Latest Posts </h2>
 
-    {% for post in site.posts limit 4 %}
+    {% for post in site.posts limit:4 %}
     <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> &raquo; <span>{{ post.date | date_to_string }}</span></li>
         {{ post.content | strip_html | truncatewords:50}}<br>
         <a href="{{ post.url }}">Read more...</a><br><br>
