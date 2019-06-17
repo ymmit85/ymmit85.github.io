@@ -58,7 +58,7 @@ grep 'EC keySize &lt; 224,' $VMWARE_JAVA_HOME/lib/security/java.security
 sed -i '/ EC keySize &lt; 224, TLSv1, TLSv1.1, DES40_CBC, RC4_40, 3DES_EDE_CBC/c\ EC keySize &lt; 224, DES40_CBC, RC4_40, 3DES_EDE_CBC' $VMWARE_JAVA_HOME/lib/security/java.security
 ``
 
-# View new config
+#### View new config
 ``
 grep 'EC keySize &lt; 224,' $VMWARE_JAVA_HOME/lib/security/java.security
 
