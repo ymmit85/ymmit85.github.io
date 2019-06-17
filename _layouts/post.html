@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<div class="date">
-    {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
 <article class="post">
   <t>{{ page.title }}</t>
+
+  <div class="date">
+      {{ page.date | date: "%B %e, %Y" }}<br>
+  </div>
 
   <div class="entry">
     {{ content }}
