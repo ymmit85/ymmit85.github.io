@@ -5,8 +5,8 @@ layout: default
     <t> latest posts </t><br><br>
 
     {% for post in site.posts limit:4 %}
-    <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> &raquo; <br>
-        <div class="date"></li>
+    <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> &raquo;</li> <br>
+        <div class="date">
         {{ post.date | date_to_string }}<br></div>
         {{ post.content | strip_html | truncatewords:50}}<br>
         <a href="{{ post.url }}">Read more...</a><br><br>
