@@ -10,7 +10,7 @@ vROps is a great tool for observing performance of a vSphere environment, invest
 
 I’ve been looking to report on advanced configuration settings on hosts for sometime (eg: NetApp recommended settings, TPS state and productlocker config for VMtools). This started a bit of a trip down a rabbit hole, I started looking at reporting on Host Profiles, VUM and generally all advanced settings/properties of a host. Considering that I’ve been leveraging [PowervROps](https://github.com/ymmit85/PowervROps) lately I've been able to put together the below scripts that allow virtually (no pun intended) any data for any object to be put into vROps.
 
-This opens up some huge possibilities with this data, we can now create Reports/Views showing this information, a Dashboard showing the amount of hosts with a configuration parameter set or which Host Profile is applied and is it compliant or better yet - are the hosts compliant with a VUM Baseline. Additionally Alerts can be configured for misconfiguration and the new compliance dashboards can feed off this data.
+This opens up some huge possibilities with this data, we can now create Reports/Views showing this information, a Dashboard showing the amount of hosts with a configuration parameter set or which Host Profile is applied and is it compliant or better yet - are the hosts compliant with a VUM Baseline? Additionally Alerts can be configured for misconfiguration and the new compliance dashboards can feed off this data.
 Hopefully this type of data can be ingested natively with vROps in the future as it would save significant effort for admins to find configuration data of their environment and quickly see if the impact of a change had an unexpected performance impact.
 
 These scripts are all currently targeted at Hosts, but they can very easily be changed to support all other objects (I have tested this, but just wanted to get Host Reporting sorted first) keep an eye on GitHub for updates and feel free to contribute to them.
@@ -22,3 +22,5 @@ These scripts are all currently targeted at Hosts, but they can very easily be c
 [VUM Baseline Compliance.](https://github.com/ymmit85/vROps/tree/master/VUM%20Properties)
 
 [Licence Key Reporting.](https://github.com/ymmit85/vROps/tree/master/Licence%20Key%20Properties)
+
+Also if you would like to generate an As Built document for your vROps environement checkout the [AsBuiltReport for vROps](https://github.com/AsBuiltReport/AsBuiltReport.VMware.vROps)
